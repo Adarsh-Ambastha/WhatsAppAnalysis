@@ -1,5 +1,5 @@
 # Importing all the Important Libraries 
-from tkinter import *
+# from tkinter import *
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -113,13 +113,13 @@ if uploaded_file is not None:
             # st.title(x)
 
     #Word Cloud
-        st.title("Word Cloud")
-        df_wc=helper.create_word_cloud(selected_user,df)
-        # plt.savefig("mygraph.png")
-        matplotlib.use('TkAgg')
-        # plt.axis("off")
-        plt.imshow(df_wc)
-        plt.show()
+#         st.title("Word Cloud")
+#         df_wc=helper.create_word_cloud(selected_user,df)
+#         # plt.savefig("mygraph.png")
+#         matplotlib.use('TkAgg')
+#         # plt.axis("off")
+#         plt.imshow(df_wc)
+#         plt.show()
 
     #Finding the most common word
         st.title("Most common words")
