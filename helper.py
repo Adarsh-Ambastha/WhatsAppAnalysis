@@ -56,7 +56,7 @@ def create_word_cloud(selected_user,df):
     return df_wc
 
 def most_common_words(selected_user,df):
-    f=open('A:\Krish_nayak\WhatsApp Chat Analysis\hinglish.txt','r')
+    f=open('hinglish.txt','r')
     stop_word=f.read()
     if selected_user!='OverAll':
         df=df[df['Names']==selected_user]
