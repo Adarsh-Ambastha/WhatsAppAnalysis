@@ -21,7 +21,7 @@ def preprocess(data):
 
     hence the function returns a proper dataframe with all the usefull information extracted from the chats
     '''
-    pattern= '\d{1,2}\/\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}\s(?:AM|PM)\s-\s'
+    pattern= '\d{1,2}\/\d{1,2}\/\d{1,2},\s\d{1,2}:\d{1,2}\s(?:AM|am|PM|pm)\s-\s'
 
     message = re.split(pattern,data)[1:]
     dates=re.findall(pattern,data)
